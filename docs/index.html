@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>github_pages</title>
+<title>github_pages_101</title>
+<style>
+    body { font-family: monospace; }
+</style>
 </head>
 <body>
-<h1> github_pages_101主页</h1>
-<iframe src="ipaddresses.html" width="400" height="180" frameborder="0"></iframe>
-<h4 id="id01">AAAA</h4>
-<h5 id="id02">AAAA</h5>
+<h1>github_pages_101主页</h1>
+<iframe width="400" height="185" src="./ipaddresses.html" frameborder="0"></iframe>
+
 <script>
-let now=new Date();
-let t1=now.toLocaleString("en-GB",{weekday:"short",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true});
-document.getElementById("id01").innerText=t1;
-document.getElementById("id02").innerText=Date.now();
+const date = new Date();
+const formattedDate = date.toLocaleString("en-GB", { 
+    weekday: "short", day: "2-digit", month: "2-digit", year: "numeric",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true
+});
+document.write("<p>" + formattedDate + "</p>");
+document.write("<p>" + Date.now() + "</p>");
 </script>
 </body>
 </html>
